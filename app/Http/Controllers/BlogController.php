@@ -12,7 +12,7 @@ class BlogController extends Controller
 {
     //
     public function addBlog(Request $request){
-        try {
+        
             $request->validate([
                 'title' => 'required',
                 'body' => 'required',
@@ -37,9 +37,7 @@ class BlogController extends Controller
             }else{
                 return redirect()->back()->with('error', 'Failed to create post!');
             }
-        } catch (Exception $e) {
-            return redirect()->back()->with('error', 'Failed to add post!');
-        }
+       
         
     }
 
