@@ -26,12 +26,6 @@ class BlogController extends Controller
                 $thumbnail = time() . '_' . $file->getClientOriginalName();
                 $file->storeAs('uploads/', $thumbnail, 's3');
             }
-
-            // $filePath = $request->file('file')->store('uploads', 's3');
-
-            // $thumbnail = Storage::disk('s3')->url($filePath);
-            // $thumbnail = time().'.'.$request->thumbnail->extension();
-            // $request->thumbnail->move(public_path('uploads'), $thumbnail);
     
             $blog = Blog::create([
                 'title' => $request->title,
