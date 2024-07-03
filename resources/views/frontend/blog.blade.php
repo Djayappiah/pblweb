@@ -1,7 +1,7 @@
 @extends('frontend.layout.main')
 @section('content')
     <!-- Start Page Title Area -->
-    <div style="background-image: url('{{ Storage::disk('s3')->url($blog->thumbnail) }}');" class="page-title-area item-bg2 jarallax" data-jarallax="{" speed":="" 0.3}"="">
+    <div style="background-image: url('{{ Storage::disk('s3')->response($blog->thumbnail) }}');" class="page-title-area item-bg2 jarallax" data-jarallax="{" speed":="" 0.3}"="">
         <div class="container">
             <div class="page-title-content">
                 <h2>{{$blog->title}}</h2>
@@ -252,7 +252,7 @@
                             @foreach ($recent_blogs as $blog)
                             <article class="item">
                                 <a href="{{route('blogdetails', $blog->slug)}}" class="thumb">
-                                    <span class="fullimage cover" role="img" style="background-image: url({{ Storage::disk('s3')->url('uploads/' . $blog->thumbnail) }});"></span>
+                                    <span class="fullimage cover" role="img" style="background-image: url({{ Storage::disk('s3')->response('uploads/' . $blog->thumbnail) }});"></span>
                                 </a>
                                 <div class="info">
                                     <time datetime="2021-06-30">{{\Carbon\Carbon::parse($blog->created_at)->format('F d, Y')}}</time>
