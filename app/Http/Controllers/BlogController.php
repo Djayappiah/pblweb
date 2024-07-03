@@ -20,9 +20,18 @@ class BlogController extends Controller
             ],[
                 'thumbnail' => 'Please add thumbnail'
             ]);
-    
-            $thumbnail = time().'.'.$request->thumbnail->extension();
-            $request->thumbnail->move(public_path('uploads'), $thumbnail);
+            
+            if($request->hasFile('thumbnail')){
+                $file = $request->file('thumbnail');
+                $thumbnail = time() . '_' . $file->getClientOriginalName();
+                $file->storeAs('uploads/', $thumbnail, 's3');
+            }
+
+            // $filePath = $request->file('file')->store('uploads', 's3');
+
+            // $thumbnail = Storage::disk('s3')->url($filePath);
+            // $thumbnail = time().'.'.$request->thumbnail->extension();
+            // $request->thumbnail->move(public_path('uploads'), $thumbnail);
     
             $blog = Blog::create([
                 'title' => $request->title,
@@ -56,13 +65,14 @@ class BlogController extends Controller
             ]);
     
             if ($request->hasFile('thumbnail')) {
-                $filePath = public_path('uploads/' . $blog->thumbnail);
-                if(file_exists($filePath)){
-                    unlink($filePath);
+                if ($blog->thumbnail) {
+                    Storage::disk('s3')->delete($blog->thumbnail);
+                
+                    $file = $request->file('thumbnail');
+                    $thumbnail = time() . '_' . $file->getClientOriginalName();
+                    $file->storeAs('uploads/', $thumbnail, 's3');
                 }
-                Storage::disk('public')->delete('uploads' . $blog->thumbnail);
-                $thumbnail = time() . '.' . $request->thumbnail->extension();
-                $request->thumbnail->move(public_path('uploads'), $thumbnail);
+                
             } else {
                 $thumbnail = $blog->thumbnail;
             }
