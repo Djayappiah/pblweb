@@ -40,6 +40,7 @@ class BlogController extends Controller
                 'user_id' => Auth::user()->id,
                 'thumbnail' => $thumbnail,
             ]);
+            
     
             if($blog){
                 return redirect()->back()->with('success', 'Post added successfully.');

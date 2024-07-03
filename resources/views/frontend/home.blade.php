@@ -803,11 +803,12 @@
 
 				<div class="row" >
                     @foreach ($blogs as $blog)
+                    
                     <div class="col-lg-4 col-md-6">
 						<div style="width: 24rem; height: 25rem; padding:0;" class="single-blog-post">
 							<div  style="width:100%; height:60%; position: relative;">
 								<a href="single-blog.html">
-									<img style="width: 100%; height:100%" src="{{ Storage::disk('s3')->response('uploads/' . $blog->thumbnail) }}" alt="image">
+									<img style="width: 100%; height:100%" src="{{Storage::disk('s3')->url('uploads/' . $blog->thumbnail)}}" alt="image">
 								</a>
 
 								<div class="date" style="
