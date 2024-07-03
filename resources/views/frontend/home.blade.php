@@ -450,7 +450,7 @@
                         <div class="item">
                             <div class="single-feedback">
                                 <div class="client-img">
-                                    <img src="frontend/images/1.jpg" alt="image">
+                                    <img src="https://pbl-file-upload.s3.eu-north-1.amazonaws.com/uploads/1720003654_5-major-financial-services-tech-trends-in-2024-banner.jpg" alt="image">
                                 </div>
 
                                 <h3>John Lucy</h3>
@@ -807,7 +807,7 @@
 						<div style="width: 24rem; height: 25rem; padding:0;" class="single-blog-post">
 							<div  style="width:100%; height:60%; position: relative;">
 								<a href="single-blog.html">
-									<img style="width: 100%; height:100%" src="{{ Storage::disk('s3')->url('uploads/' . $blog->thumbnail) }}" alt="image">
+									<img style="width: 100%; height:100%" src="{{ Storage::disk('s3')->url($blog->thumbnail) }}" alt="image">
 								</a>
 
 								<div class="date" style="

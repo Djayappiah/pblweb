@@ -1,7 +1,7 @@
 @extends('frontend.layout.main')
 @section('content')
     <!-- Start Page Title Area -->
-    <div style="background-image: url('{{ Storage::disk('s3')->url('uploads/' . $blog->thumbnail) }}');" class="page-title-area item-bg2 jarallax" data-jarallax="{" speed":="" 0.3}"="">
+    <div style="background-image: url('{{ Storage::disk('s3')->url($blog->thumbnail) }}');" class="page-title-area item-bg2 jarallax" data-jarallax="{" speed":="" 0.3}"="">
         <div class="container">
             <div class="page-title-content">
                 <h2>{{$blog->title}}</h2>
