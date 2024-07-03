@@ -139,7 +139,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Thumbnail</label>
-                                            <input type="file" class="dropify" id="thumbnail" name="thumbnail" data-default-file="{{ asset('uploads/' . $blog->thumbnail) }}"/>
+                                            <input type="file" class="dropify" id="thumbnail" name="thumbnail" data-default-file="{{ Storage::disk('s3')->url($blog->thumbnail) }}"/>
                                         </div>
                                         <div class="form-group">
                                             <label>Body</label>
