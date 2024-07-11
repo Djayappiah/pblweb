@@ -22,7 +22,7 @@
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated">
                                 <a class="dropdown-item" href="tables-datatable.html#">Action</a>
                                 <a class="dropdown-item" href="tables-datatable.html#">Another action</a>
-                                <a class="dropdown-item" href="tables-datatable.html#">Something else here</a>
+                                <a class="dropdown-item" href="tables-datatable.html#">Something else her</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="tables-datatable.html#">Separated link</a>
                             </div>
