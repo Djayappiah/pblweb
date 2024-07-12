@@ -23,7 +23,7 @@
 
                 <div class="navbar-list">
                     <ul>
-                        <li><a href="{{asset('frontend/personal.html')}}">Digital Banking</a></li>
+                        <li><a href="{{asset('frontend/personal.html')}}">Digital Bankingssssssssss</a></li>
                         <li><a href="https://online.prudentialbank.com.gh/netWise/banking">Internet Banking</a></li>
                     </ul>
                 </div>
