@@ -1,5 +1,5 @@
   <!-- Start Navbar Area -->
-  <div class="navbar-area currency-transfer-provider-navbar">
+<div class="navbar-area currency-transfer-provider-navbar">
     <div class="luvion-responsive-nav">
         <div class="container">
             <div class="luvion-responsive-menu">
@@ -21,15 +21,15 @@
                     <img src="{{asset('frontend/images/pbllogo.png')}}" width="200px" alt="logo">
                 </a>
 
-                <div class="navbar-list">
+                {{-- <div class="navbar-list">
                     <ul>
-                        <li><a href="{{asset('frontend/personal.html')}}">Digital Bankingssssssssss</a></li>
+                        <li><a href="{{asset('frontend/personal.html')}}">Digital Banking</a></li>
                         <li><a href="https://online.prudentialbank.com.gh/netWise/banking">Internet Banking</a></li>
                     </ul>
-                </div>
+                </div> --}}
 
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav" style="color:white">
                         <li class="nav-item"><a href="#" class="nav-link">Home <i class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a href="index.html" class="nav-link">Banking &amp; Payment Processing</a></li>
@@ -155,4 +155,5 @@
         </div>
     </div>
 </div>
+
 <!-- End Navbar Area -->
