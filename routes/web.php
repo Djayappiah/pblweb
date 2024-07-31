@@ -48,6 +48,7 @@ Route::get('/run-migration', function(){
 //---------------------------------------------------  FRONTEND  ---------------------------------------------------------//
 
 Route::get('/', [HomeController::class,'index'])->name('welcome');
+Route::get('/digital/banking',[HomeController::class, 'digital_banking'])->name('digital.banking');
 Route::get('/blogdetails/{slug}', [HomeController::class,'blog'])->name('blogdetails');
 
 require __DIR__.'/auth.php';

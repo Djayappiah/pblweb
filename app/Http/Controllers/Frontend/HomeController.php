@@ -20,4 +20,9 @@ class HomeController extends Controller
         $recent_blogs = Blog::where('id', '!=', $blog->id)->orderBy('created_at', 'desc')->take(3)->get();
         return view('frontend.blog', compact('blog', 'recent_blogs'));
     }
+
+    public function digital_banking()
+    {
+        return view('frontend.digitalbanking');
+    }
 }
