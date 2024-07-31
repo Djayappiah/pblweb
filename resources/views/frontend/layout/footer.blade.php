@@ -4,8 +4,8 @@
             <div class="col-lg-3 col-sm-6 col-md-6">
                 <div class="single-footer-widget">
                     <div class="logo">
-                        <a href="index.html" class="black-logo"><img src="{{asset('frontend/images/pbllogo.png')}}" alt="logo"></a>
-                        <a href="index.html" class="white-logo"><img src="{{asset('frontend/images/pbllogo.png')}}" alt="logo"></a>
+                        <a href="index.html" class="black-logo"><img src="{{asset('frontend/images/PBL logo-white.png')}}" alt="logo"></a>
+                        <a href="index.html" class="white-logo"><img src="{{asset('frontend/images/PBL logo-white.png')}}" alt="logo"></a>
                         {{-- <p>Quis ipsum suspendisse ultrices gravida commodo. Risus commodo veliliee vel viverra maecenas accumsan lacus vel facilisis.</p> --}}
                     </div>
                     

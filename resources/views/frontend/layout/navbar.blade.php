@@ -5,8 +5,8 @@
             <div class="luvion-responsive-menu">
                 <div class="logo">
                     <a href="{{route('welcome')}}">
-                        <img src="{{asset('frontend/images/pbllogo.png')}}" alt="logo">
-                        <img src="{{asset('frontend/images/pbllogo.png')}}" alt="logo">
+                        <img src="{{asset('frontend/images/PBL logo-white.png')}}" alt="logo">
+                        <img src="{{asset('frontend/images/PBL logo-white.png')}}" alt="logo">
                     </a>
                 </div>
             </div>
@@ -17,8 +17,8 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="{{route('welcome')}}">
-                    <img src="{{asset('frontend/images/pbllogo.png')}}" width="100px" alt="logo">
-                    <img src="{{asset('frontend/images/pbllogo.png')}}" width="100px" alt="logo">
+                    <img src="{{asset('frontend/images/PBL logo-white.png')}}" width="180" alt="logo">
+                    <img src="{{asset('frontend/images/PBL logo-white.png')}}" width="180" alt="logo">
                 </a>
 
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">

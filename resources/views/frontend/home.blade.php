@@ -1,6 +1,31 @@
 @extends('frontend.layout.main')
 @section('content')
-
+<head>
+    <style>
+        .single-featured-box{
+            background:white;
+            margin-right: 2rem;
+            box-shadow: 1rem 1rem 1rem rgba(0, 0,0 , 0.2);
+        }
+        .single-featured-box h3{
+            font-size: 1rem
+        }
+    
+        @media (max-width: 768px) {
+            .col-md-4 {
+                max-width: 50%;
+                flex: 0 0 50%;
+            }
+        }
+    
+        @media (max-width: 576px) {
+            .col-sm-6 {
+                max-width: 100%;
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
     <!-- Start Main Banner Area -->
     <div class="banner-slider-eight owl-carousel owl-theme">
         <div class="main-banner jarallax" data-jarallax="{" speed":="" 0.3}"="">
@@ -35,7 +60,7 @@
     <!-- Start Featured Boxes Area -->
     <section class="featured-boxes-area">
         <div class="container">
-            <div class="featured-boxes-inner">
+            <div class="featured-boxes-inner" style="background: transparent;">
                 <div class="row m-0">
                     <div class="col-lg-2 col-sm-6 col-md-6 p-0" style="width:20%;">
                         <div class="single-featured-box">
