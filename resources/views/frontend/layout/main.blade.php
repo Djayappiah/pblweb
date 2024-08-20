@@ -19,9 +19,11 @@
     <link rel="stylesheet" href="{{asset('frontend/css/responsive.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/dark-style.css')}}">
 
-    <title>Luvion - Banking Finance &amp; Money Transfer HTML Template</title>
+    <title>Prudential Bank Limited</title>
 
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="{{ asset('frontend/images/plogo.png') }}">
+
+    <script>window.danteEmbed = "https://dante-ai.com/embed/?kb_id=5b88fbc6-93d5-420f-a988-2945fa33d067&token=0ce74887-82ab-4f5d-9231-7e916c6d9906&modeltype=gpt-4-omnimodel-mini&mode=false&logo=ZmFsc2U%3D&bubble=true&bubbleopen=false"</script><script src="https://dante-ai.com//bubble-embed.js"></script>
 </head>
 
     <!-- Preloader -->

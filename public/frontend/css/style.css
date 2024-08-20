@@ -4810,7 +4810,7 @@ Go Top CSS
   cursor: pointer;
   top: 50%;
   right: 15px;
-  background: linear-gradient(90deg, rgb(238, 9, 121) 0%, rgb(255, 106, 0) 100%);
+  background:#e3c74d;
   z-index: 4;
   width: 40px;
   text-align: center;
@@ -4835,7 +4835,7 @@ Go Top CSS
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
+  background: #e3c74d;
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
@@ -5372,8 +5372,8 @@ Get Started Area CSS
 }
 
 .dark-version {
-  top: 20%;
-  left: 20px;
+  top: 80%;
+  left: 10px;
   z-index: 99991;
   position: fixed;
   transform: translateY(-20%);
@@ -5415,7 +5415,7 @@ Get Started Area CSS
   background-repeat: no-repeat;
 }
 .dark-version input:checked + .slider {
-  background-color: #44ce6f;
+  background-color: yellow;
 }
 .dark-version input:checked + .slider:before {
   transform: translateX(24px);
@@ -5440,7 +5440,7 @@ Get Started Area CSS
   text-align: center;
   border-radius: 50%;
   display: inline-block;
-  background-color: #81b441;
+  background-color: #0A1539;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   animation-name: tada;
   animation-duration: 1s;
@@ -5465,9 +5465,9 @@ Get Started Area CSS
   height: 100%;
   border-radius: 50%;
   position: absolute;
-  animation-delay: 0.2s;
-  background-color: #81b441;
-  animation: ripple 1.5s ease-out infinite;
+  animation-delay: 0.5s;
+  background-color: #0693B3;
+  animation: ripple 2.5s ease-out infinite;
 }
 
 @keyframes ripple {

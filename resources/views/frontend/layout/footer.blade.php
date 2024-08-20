@@ -4,8 +4,8 @@
             <div class="col-lg-3 col-sm-6 col-md-6">
                 <div class="single-footer-widget">
                     <div class="logo">
-                        <a href="index.html" class="black-logo"><img src="{{asset('frontend/images/PBL logo-white.png')}}" alt="logo"></a>
-                        <a href="index.html" class="white-logo"><img src="{{asset('frontend/images/PBL logo-white.png')}}" alt="logo"></a>
+                        <a href="index.html" class="black-logo"><img src="{{asset('frontend/images/PBL logo-white.png')}}" alt="logo" width="120px"></a>
+                        <a href="index.html" class="white-logo"><img src="{{asset('frontend/images/PBL logo-white.png')}}" alt="logo" width="120px"></a>
                         {{-- <p>Quis ipsum suspendisse ultrices gravida commodo. Risus commodo veliliee vel viverra maecenas accumsan lacus vel facilisis.</p> --}}
                     </div>
                     
@@ -97,8 +97,7 @@
                         <div class="copyright-area2">
                             <p>Copyright @<script data-cfasync="false" src="{{asset('frontend/js/email-decode.min.js')}}"></script><script>document.write(new Date().getFullYear())</script>2024 Luvion is proudly created by <a href="https://envytheme.com/" target="_blank"> Prudential Baank Limited</a></p>
                         </div>
-                        <a href="index.html" class="black-logo"><img src="{{asset('frontend/images/PBL LOGO-NO TAG.png')}}" alt="logo" width="300px"></a>
-                        <a href="index.html" class="white-logo"><img src="{{asset('frontend/images/PBL LOGO-NO TAG.png')}}" alt="logo"></a>
+                  
                         {{-- <p>Quis ipsum suspendisse ultrices gravida commodo. Risus commodo veliliee vel viverra maecenas accumsan lacus vel facilisis.</p> --}}
                     </div>
                     

@@ -23,16 +23,16 @@
 
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav" style="color:white">
-                        <li class="nav-item"><a href="index-3.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link">Home</a></li>
 
 
                         <li class="nav-item"><a href="#" class="nav-link">Personal <i class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="index.html" class="nav-link">Current Accounts</a></li>
+                                <li class="nav-item"><a href="{{ route('current') }}" class="nav-link">Current Accounts</a></li>
 
-                                <li class="nav-item"><a href="index-2.html" class="nav-link">Savings Accounts</a></li>
+                                <li class="nav-item"><a href="{{ route('savings') }}" class="nav-link">Savings Accounts</a></li>
 
-                                <li class="nav-item"><a href="index-3.html" class="nav-link">Investment Accounts</a></li>
+                                <li class="nav-item"><a href="{{ route('investment') }}" class="nav-link">Investment Accounts</a></li>
 
                                 <li class="nav-item"><a href="index-4.html" class="nav-link">Loan Calculator</a></li>
 
@@ -43,15 +43,15 @@
 
                         <li class="nav-item"><a href="#" class="nav-link">Business <i class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="index.html" class="nav-link">Current Accounts</a></li>
+                                <li class="nav-item"><a href="{{ route('business.current') }}" class="nav-link">Current Accounts</a></li>
 
-                                <li class="nav-item"><a href="index-2.html" class="nav-link">Savings & Investments</a></li>
+                                <li class="nav-item"><a href="{{ route('business.savings') }}" class="nav-link">Savings & Investments</a></li>
 
-                                <li class="nav-item"><a href="index-3.html" class="nav-link">Trade Finance</a></li>
+                                <li class="nav-item"><a href="{{ route('business.trade.finance') }}" class="nav-link">Trade Finance</a></li>
 
-                                <li class="nav-item"><a href="index-4.html" class="nav-link">Credit Facilities</a></li>
+                                <li class="nav-item"><a href="{{ route('business.credit') }}" class="nav-link">Credit Facilities</a></li>
 
-                                <li class="nav-item"><a href="index-4.html" class="nav-link">Treasury Services</a></li>
+                                <li class="nav-item"><a href="{{ route('business.treasury') }}" class="nav-link">Treasury Services</a></li>
                                
                             </ul>
                         </li>
@@ -59,11 +59,11 @@
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a href="index.html" class="nav-link">Vision &amp; Mission</a></li>
 
-                                <li class="nav-item"><a href="index-2.html" class="nav-link">Values & Promise</a></li>
+                                <li class="nav-item"><a href="{{ route('about.values') }}" class="nav-link">Values & Promise</a></li>
 
                                 <li class="nav-item"><a href="index-3.html" class="nav-link">Board of Directors</a></li>
 
-                                <li class="nav-item"><a href="index-4.html" class="nav-link">Code of Ethics</a></li>
+                                <li class="nav-item"><a href="{{ route('about.coe') }}" class="nav-link">Code of Ethics</a></li>
 
                                 <li class="nav-item"><a href="index-5.html" class="nav-link">Senior Management</a></li>
 

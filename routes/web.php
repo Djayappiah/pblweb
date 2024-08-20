@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminPagesController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\Frontend\BotController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\HomeController;
@@ -50,5 +51,22 @@ Route::get('/run-migration', function(){
 Route::get('/', [HomeController::class,'index'])->name('welcome');
 Route::get('/digital/banking',[HomeController::class, 'digital_banking'])->name('digital.banking');
 Route::get('/blogdetails/{slug}', [HomeController::class,'blog'])->name('blogdetails');
+Route::get('/personal/current', [HomeController::class, 'current'])->name('current');
+Route::get('/personal/savings', [HomeController::class, 'savings'])->name('savings');
+Route::get('/personal/investment', [HomeController::class, 'investment'])->name('investment');
+Route::get('/business/current', [HomeController::class, 'business_current'])->name('business.current');
+Route::get('/business/savings', [HomeController::class, 'business_savings'])->name('business.savings');
+Route::get('/business/trade & finance', [HomeController::class, 'business_trade_finance'])->name('business.trade.finance');
+Route::get('/business/credit', [HomeController::class, 'business_credit'])->name('business.credit');
+Route::get('/business/treasury', [HomeController::class, 'business_treasury'])->name('business.treasury');
+Route::get('/about/coe', [HomeController::class, 'coe'])->name('about.coe');
+Route::get('/about/values', [HomeController::class, 'values'])->name('about.values');
+
+
+
+
+
+Route::get('/bot', [BotController::class, 'bot'])->name('bot');
+
 
 require __DIR__.'/auth.php';

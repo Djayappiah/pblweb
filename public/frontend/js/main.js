@@ -208,7 +208,7 @@
 	});
 
 	// Buy Now Btn
-    $('body').append("<a href='https://1.envato.market/JyOdr' class='buy-now-btn' target='_blank'><img src='assets/img/envato.png' alt='envato'/></a>");
+    $('body').append("<a href='/bot' class='buy-now-btn' target='_blank'><img src='frontend/images/av2.png' alt='envato' width='40px'x/></a>");
 	
 	// Preloader
 	jQuery(window).on('load', function() {
